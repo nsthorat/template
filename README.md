@@ -1,4 +1,4 @@
-# Davant
+# Typescript Node + client with edit-refresh.
 
 ### Dev setup
 
@@ -31,15 +31,4 @@ Run the server with:
 
 ```sh
 ./scripts/run_server_prod.sh
-```
-
-### Tips
-
-#### pyenv install not working on M1
-
-If your pyenv does not work on M1 machines after installing xcode, you may need to reinstall xcode command line tools. [Stack Overflow Link](https://stackoverflow.com/questions/65778888/pyenv-configure-error-c-compiler-cannot-create-executables)
-
-```sh
-$ sudo rm -rf /Library/Developer/CommandLineTools
-$ xcode-select --install
 ```
