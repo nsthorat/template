@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "target": "es2020",
+    "jsx": "react",
+    "lib": ["es6", "dom", "es2015"],
+    "outDir": "./dist/static/",
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedParameters": false,
+    "pretty": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "incremental": true
+  },
+  "include": ["src/server/web/**/*.ts", "src/server/web/**/*.tsx"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}

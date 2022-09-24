@@ -1,0 +1,27 @@
+{
+  "extends": ["prettier", "eslint:recommended"],
+  "parser": "@babel/eslint-parser",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  },
+  "ignorePatterns": ["node_modules/**/*"],
+  "parserOptions": {
+    "requireConfigFile": false
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
+      // See https://github.com/typescript-eslint/typescript-eslint/blob/main/docs/linting/TROUBLESHOOTING.md#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

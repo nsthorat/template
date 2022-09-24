@@ -1,0 +1,56 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    ".venv/": true,
+    ".mypy_cache/": true,
+    "dist/": true,
+    "**/yarn.lock": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.rulers": [100],
+  "files.insertFinalNewline": true,
+  "editor.detectIndentation": false,
+  "editor.wrappingIndent": "none",
+  "files.exclude": {
+    ".venv/": true,
+    ".mypy_cache/": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "eslint.workingDirectories": ["auto"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["typescript"],
+  "python.envFile": "${workspaceFolder}/.venv",
+  "python.linting.mypyEnabled": true,
+  "python.formatting.provider": "yapf",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.linting.pylintEnabled": true,
+
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.postCommitCommand": "sync"
+}
