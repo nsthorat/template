@@ -31,8 +31,6 @@
     "yargs": "~17.5.1"
   },
   "scripts": {
-    "docker-build-image": "docker build -t server .",
-    "docker-run": "docker run -d -p 5432:5432 server",
     "lint": "eslint \"src/**/*.{js,ts,tsx}\""
   }
 }
