@@ -16,7 +16,7 @@ npm install
 #### Run local webserver with edit-refresh
 
 ```sh
-./scripts/run_server_local.sh
+./scripts/run_server_dev.sh
 ```
 
 #### Build and run the server in prod mode
